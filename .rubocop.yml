@@ -1,0 +1,118 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+
+AllCops:
+  TargetRubyVersion: 3.3
+  Exclude:
+    - config/deploy.rb
+    - bin/webpack*
+    - db/**/*
+    - bin/setup
+    - Capfile
+    - node_modules/**/*
+    - vendor/**/*
+    - config/initializers/*
+    - config/environments/*
+    - bin/*
+    - Gemfile
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Layout/SpaceInLambdaLiteral:
+  Enabled: true
+  EnforcedStyle: require_space
+
+Metrics/BlockLength:
+  Exclude:
+    - app/admin/**/*.rb
+    - config/routes.rb
+    - spec/**/*.rb
+    - lib/tasks/**/*.rake
+    - config/environments/development.rb
+
+Metrics/LineLength:
+  Exclude:
+    - config/initializers/*.rb
+    - config/environments/*.rb
+  Max: 150
+
+Style/BlockDelimiters:
+  Exclude:
+    - spec/**/*.rb
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: true
+  EnforcedStyle: snake_case
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/SingleLineBlockParams:
+  Methods:
+    - reduce:
+        - a
+        - e
+    - inject:
+        - a
+        - e
+
+Style/Lambda:
+  Enabled: false
+
+Lint/AmbiguousOperator:
+  Enabled: false
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 38
+
+Metrics/ClassLength:
+  Max: 105
+
+Metrics/MethodLength:
+  Max: 25
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%w': ()
+    '%i': ()
+
+Style/FormatStringToken:
+  EnforcedStyle: template
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/Blank:
+  Enabled: false
+
+Style/MixinUsage:
+  Exclude: 
+    - bin/update
+
+Rails/OutputSafety:
+  Exclude:
+    - app/helpers/home_helper.rb
+
+Lint/MissingSuper:
+  Exclude:
+    - 'lib/slack_notifications/**/*'

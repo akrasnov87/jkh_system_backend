@@ -1,0 +1,6 @@
+:max_retries: 3
+:queues:
+  - [push, 5]
+  - [accounts, 5]
+  - [payments, 5]
+  - [counters, 5]

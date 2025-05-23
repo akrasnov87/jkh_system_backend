@@ -1,0 +1,273 @@
+ru:
+  active_admin:
+    batch_actions:
+      labels:
+        send_push: Отправить Push-уведомления
+  companies:
+    yut: ООО Уют
+    td: ООО ТД
+    yk_td: ООО УК Теплый Дом
+    yut_plus: ООО Уют Плюс
+    yk_centr: ООО УК Центр
+    yk_jkh: ООО УК ЖКХ
+  replies:
+    kinds:
+      client: собственника
+      staff: сотрудника
+  payments:
+    statuses:
+      revoked: Отменен
+      paid: Оплачен
+      created: Создан
+  service_orders:
+    statuses:
+      unpaid: Не оплачена
+      paid: Оплачена
+      resolve: Решена
+      close: Закрыта
+  attachments:
+    kinds:
+      default: Картинка для новости
+      icon: Картинка для кнопки
+  notifications:
+    kinds:
+      general: Для всех
+      personal_company: Для компании
+      personal_house: Для дома
+    url_actions:
+      menu: Главная
+      notificationsPage: Push Уведомления
+      settingsPage: Настройки
+      moreInfoFirstPage: Новости общие
+      moreInfoSecondPage: Новости по УК
+      moreInfoThirdPage: Новости по дому
+      moreInfoRewardPage: Награды
+      lsPage: Оплата коммунальных услуг
+      requestsPage: Обращения
+      paidServicesScreen: Список услуг
+      paidServicesPage: Заявки на услуги
+      metersPage: Счетчики
+      metersVerificationPage: Поверка счетчиков
+  time:
+    formats:
+      long: "%Y-%m-%d %H:%M:%S"
+  formtastic:
+    create: "Создать %{model}"
+    update: "Сохранить изменения"
+  activerecord:
+    models:
+      service_order:
+        one: Заявка на услугу
+        other: Заявки на услуги
+      service_work:
+       one: Вид работы
+       other: Виды работ
+      service_category:
+        one: Категория услуги
+        other: Категории услуг
+      attachment:
+        one: Вложение
+        other: Вложения
+      push:
+        one: Отправленное Уведомление
+        other: Отправленные Уведомления
+      useful_contact:
+        one: Полезный Контакт
+        other: Полезные Контакты
+      reward:
+        one:  Награда
+        other: Награды
+      company_info:
+        one: Информация о компании
+        other: Информация о компаниях
+      emergency_phone:
+        one: Аварийный номер
+        other: Аварийные номера
+      notification:
+        one: Объявление
+        other: Объявления
+      payment:
+        one: Оплата
+        other: Оплаты
+      push_template:
+        one: Шаблон Уведомления
+        other: Шаблоны Уведомлений
+      company_detail:
+        one: Реквизиты Компании
+        other: Реквизиты Компаний
+      tariff:
+        one: Тариф
+        other: Тарифы
+      reply:
+        one: Сообщение
+        other: Сообщения
+      ticket:
+        one: Обращение
+        other: Обращения
+      account:
+        one: Лицевой Счет
+        other: Лицевые Счета
+      user:
+        one: Пользователь
+        other: Пользователи
+      counter:
+        one: Счетчик
+        other: Счетчики
+      company_phone:
+        one: Номер Компании
+        other: Номера Компаний
+    attributes:
+      company_info:
+        company: Компания
+        email: Почта
+        phone: Телефон
+        address: Адрес
+        working_schedules: График работы
+        attachments: Метка на карте
+      emergency_phone:
+        number: Телефон
+        company: Комания
+      notification:
+        title: Заголовок
+        body: Сообщение
+        active: Включено
+        company: Компания
+        image: Картинка
+        kind: Тип объявления
+        house: Дом
+        icons: Картинка для кнопки
+        news_images: Картинка для новости
+        url_action: Ссылка на страницу в приложении
+      push_template:
+        title: Заголовок
+        body: Сообщение
+        company: Компания
+        url_action: Ссылка на страницу в приложении
+      company_phone:
+        number: Телефон
+        name: Имя Компании
+      company_detail:
+        company: Компания
+        name: Наименование
+        address: Юридический адрес
+        inn: ИНН
+        kpp: КПП
+        bill_type: Название счета
+        bill_number: р/с
+        bank_name: Банк
+        bik: БИК
+        bill_cor: к/с
+      tariff:
+        name: Наименование
+        value: Значение
+        company: Компания
+        explanation: Обоснование
+      service_work:
+        id: ID
+        name: Имя
+        service_category: Категория услуг
+        company: Компания
+      service_category:
+        id: ID
+        one: Категория услуги
+        name: Имя
+        company: Компания
+        image: Картинка
+      ticket:
+        one: Обращение
+        id: ID
+        description: Текст обращения
+        subject: Тема
+        full_name: ФИО
+        phone: Телефон
+        address: Адрес
+        company: Компания
+        created_at: Создано
+        updated_at: Обновлено
+        department: Отдел
+        origin: Источник
+        origins:
+          mobile: Приложение
+          letter: Письмо
+          in_person: Устное
+          gos_jkh: Гос ЖКХ
+          supervisory_authority: Надзорный орган
+        status:
+          one:  Статус
+        statuses:
+          pending: Диалог в Процессе
+          close: Закрыт
+          open: Новая заявка
+          replayed: Ответ отправлен
+          resolved: Решено
+      reply:
+        one: Сообщение
+        id: ID
+        description: Текст обращения
+        subject: Тема
+      useful_contact:
+        company: Компания
+        name: Название
+        number: Номер
+      reward:
+        body: Сообщение
+        title: Заголовок
+        company: Компания
+        attachments: Вложение
+      service_order:
+        number: № ЛС
+        phone: Телефон
+        full_name: ФИО
+        address: Адрес
+        service_work: Вид работы
+        account: Лицевой счет
+        user: Пользователь
+        service_category: Категория услуги
+        subject: Вид работы
+        description: Описание
+        status: Статус
+        created_at: Создан
+        company: Компания
+      service_reply:
+        description: Текст обращения
+        subject: Вид работы
+      account:
+        id: ID
+        house: Дом
+        external_id: Внешний ID
+        number: № ЛС
+        app: Приложение
+        date_begin: Дата начала
+        date_end: Дата окончания
+        address: Адрес
+        full_name: ФИО
+        company: Компания
+        counters: Счетчики
+      user:
+        id: ID
+        email: Почта
+        phone: Телефон
+        role: Роль
+        full_name: ФИО
+        sms_code: Код из смс
+        created_at: Создан
+        app: Приложение
+        roles:
+          user: Клиент
+          admin: Администратор
+          super_admin: Super Admin
+          staff: Сотрудник УК
+      counter:
+        id: ID
+        external_id: Внешний ID
+        account: Лицевой счет
+        counter_name: Название
+        serial_code: Серийный №
+        service_name: Название Сервиса
+        service_group: Группа
+        last_check: Последняя проверка
+  devise:
+    failure:
+      user:
+        not_found_in_database: Пользователь не найден
+
